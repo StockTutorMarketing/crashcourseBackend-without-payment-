@@ -22,6 +22,11 @@ const registerUserSchema = new mongoose.Schema({
         maxlength:[10, "phone number should be of 10"],
         unique: true,
 
+    },
+    Creadted:{
+        type:Date,
+        required:true,
+        default:Date.now
     }
 });
 
